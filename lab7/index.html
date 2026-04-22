@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unsplash Lab 7</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+    }
+
+    #images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    input {
+      padding: 10px;
+      width: 200px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Unsplash Image Search</h1>
+
+  <input type="text" id="searchInput" placeholder="Search images...">
+
+  <br><br>
+
+  <button onclick="searchXHR()">Search using XHR</button>
+  <button onclick="searchFetch()">Search using Fetch (Promises)</button>
+  <button onclick="searchAsync()">Search using Async/Await</button>
+
+  <div id="images"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
